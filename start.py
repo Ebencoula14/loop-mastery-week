@@ -1,8 +1,8 @@
-number = 0
-odd = 0
-for i in range(1,101):
+number_list = [5, 3, 8, 6, 2, 10]
+new_number_list = []
+
+for i in number_list:
     if i % 2 == 0:
-        number += i
-    else:
-        odd += i
-print(f"The sum of EVEN numbers is {number}. and The sum of all ODD numbers is {odd}")
+        i = i ** 2
+    new_number_list.append(i)
+print(new_number_list)
