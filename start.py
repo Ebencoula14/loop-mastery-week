@@ -1,2 +1,3 @@
-for i in range(5,-1,-1):
-    print("*" * i)
+for i in range(50):
+    if i % 2 == 0:
+        print(i, end= " ")
