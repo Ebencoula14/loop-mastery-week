@@ -1,4 +1,2 @@
-for i in range(1, 51):
-    if i % 3 != 0:
-        print(i, end= " ")
-
+for i in range(1, 6):
+    print(f'{i} * {i} = {i * i}')
