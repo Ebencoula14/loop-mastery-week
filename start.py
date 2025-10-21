@@ -1,2 +1,4 @@
-for i in range(20, -1, -1):
-    print(i)
+for i in range(1, 51):
+    if i % 3 != 0:
+        print(i, end= " ")
+
