@@ -1,3 +1,6 @@
-for i in range(1, 21):
-    i = i ** 2
-    print(i)
+number = []
+for i in range(1, 101):
+    if i % 2 != 0:
+        number.append(i)
+print(len(number))
+
