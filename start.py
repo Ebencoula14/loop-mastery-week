@@ -1,8 +1,6 @@
-for i in range(1, 21):
+for i in range(1, 7):
     if i % 2 == 0:
-        i = "Even"
-    elif i % 5 == 0:
-        i = "⭐"
+        i = "*" * i
     else:
-        i = "Odd"
+        i = str(i) * i
     print(i)
