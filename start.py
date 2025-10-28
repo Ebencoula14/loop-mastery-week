@@ -1,5 +1,5 @@
-name = "python"
-if name== "java" or "html":
-    print("login valid")
-else:
-    print("nott valid")
+def my_function():
+    print("hello")
+    print("bye")
+
+my_function()
