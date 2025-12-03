@@ -1,5 +1,4 @@
-def my_function():
-    print("hello")
-    print("bye")
-
-my_function()
+scores = 0
+for number in range(0, 101):
+    scores += number
+print(scores)
