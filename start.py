@@ -1,4 +1,4 @@
-score = 0
-while score < 10:
-    score = score + 1
+score = 11
+while score > 0:
+    score = score - 1
     print(score)
