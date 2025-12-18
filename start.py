@@ -1,4 +1,5 @@
-score = 11
-while score > 0:
-    score = score - 1
-    print(score)
+score =7
+for i in range(score):
+    for j in range(i + 1):
+        print("#" , end= " ")
+    print()
