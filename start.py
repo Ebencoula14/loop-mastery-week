@@ -1,3 +1,4 @@
-fruit = ['banana', 'orange', 'mango', 'lemon']
-for i in reversed(fruit):
-    print(i)
+count = 0
+while count < 10 :
+    print(count)
+    count = count + 1
