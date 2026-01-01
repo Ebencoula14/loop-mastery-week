@@ -1,6 +1,10 @@
-number = input("Enter a number please\n")
-score = int(number)
-count = 0
-for i in range(score + 1):
-    count += i
-print(f"The SUM of numbers in {score} is : ", count)
+from logging.config import stopListening
+
+number = [12, 75, 150, 180, 145, 525, 50]
+for i in number:
+    if i > 500:
+        break
+    elif i > 150:
+        continue
+    elif i % 5 == 0:
+        print(i)
