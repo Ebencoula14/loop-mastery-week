@@ -1,4 +1,4 @@
 count = 0
 while count < 10 :
-    count = count + 1
+    count = count + 2
     print(count, end= " ")
