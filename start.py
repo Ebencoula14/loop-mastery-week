@@ -1,4 +1,2 @@
-count = 10
-while count > 0 :
-    count = count - 1
-    print(count, end= " ")
+for i in range(1, 8):
+    print("#" *i )
