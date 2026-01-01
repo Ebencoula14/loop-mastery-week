@@ -1,3 +1,2 @@
-fruit = ['banana', 'orange', 'mango', 'lemon']
-for i in reversed(fruit):
+for i in range(1,11):
     print(i)
