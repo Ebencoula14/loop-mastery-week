@@ -1,2 +1,4 @@
-for num in range(-10, 0, 1):
+for num in range(1,6):
+    if num == 5:
+        num = "Done!"
     print(num)
