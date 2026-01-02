@@ -1,4 +1,6 @@
-for num in range(1,6):
-    if num == 5:
-        num = "Done!"
-    print(num)
+for num in range(25,51):
+    for i in range(2, num):
+        if (num % i ) == 0:
+            break
+    else:
+        print(num)
