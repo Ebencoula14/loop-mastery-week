@@ -1,4 +1,5 @@
-number = int(input("Kindly input any number \n "))
+j = 0
+for i in range(1,11):
+    j += 1
+    print(f"{i} * {j} = {i * j}")
 
-for i in range(1, number + 1):
-    print(f"The Current Number is {i} and it's Cube is {i**3}")
