@@ -1,6 +1,6 @@
 number =int(input("Enter your preferable number\n"))
 j = 0
-for i in range(1, number + 1, 1):
-    j += i
+for i in range(1,11):
+    print(f"{i * number}")
 
-print("The sum of number you picked is : ", j)
+
