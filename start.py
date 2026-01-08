@@ -1,8 +1,6 @@
-numbers = [12, 75, 150, 180, 145, 525, 50]
-for i in numbers:
-    if i > 500:
-        break
-    elif i > 150:
-        continue
-    elif i % 5 == 0:
-        print(i)
+number =int(input("Please enter any number of your choice?\n"))
+count =0
+while number != 0:
+    number = number // 10
+    count = count + 1
+print("The Total number of integers is : ", count)
