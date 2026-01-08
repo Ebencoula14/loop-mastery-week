@@ -1,4 +1,4 @@
-for i in reversed(range(1,6,1)):
-    for j in reversed(range(1, i+ 1)):
-        print(j, end="")
-    print()
+list1 = [10, 20, 30, 40, 50]
+for i in reversed(list1):
+
+    print(i)
