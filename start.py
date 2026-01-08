@@ -1,6 +1,4 @@
-number =int(input("Please enter any number of your choice?\n"))
-count =0
-while number != 0:
-    number = number // 10
-    count = count + 1
-print("The Total number of integers is : ", count)
+for i in reversed(range(1,6,1)):
+    for j in reversed(range(1, i+ 1)):
+        print(j, end="")
+    print()
