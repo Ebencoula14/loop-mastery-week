@@ -1,8 +1,3 @@
-list_fibonacci = []
-a, b = 0 , 1
-for item in range(1, 23):
-    a, b=b, a + b
-    list_fibonacci.append(a)
-    if b > 100:
-        break
-print("The Fibonacci Series is: ", list_fibonacci)
+my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+for item in my_list[1::2]:
+    print(item, end=" ")
