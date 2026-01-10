@@ -1,17 +1,8 @@
-import random
-num = random.randint(1, 21)
-if num < 2:
-    is_prime = False
-else:
-    is_prime = True
-
-    for item in range(2, int(num**0.5)+ 1):
-
-        if num % item == 0:
-            is_prime= False
+list_fibonacci = []
+a, b = 0 , 1
+for item in range(1, 10):
+    a, b=b, a + b
+    list_fibonacci.append(a)
+    if item > 100:
         break
-
-    if is_prime :
-        print(num, "is a Prime number.")
-    else:
-        print(num,"is not a prime number.")
+print("The Fibonacci Series is: ", list_fibonacci)
