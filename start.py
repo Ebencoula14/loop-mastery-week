@@ -1,4 +1,4 @@
 count = 0
-while count < 10:
-    count = count + 1
-    print(count)
+for num in range(101):
+    count+=num
+print("The sum of all numbers is : ",count)
