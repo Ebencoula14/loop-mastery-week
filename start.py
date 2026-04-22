@@ -1,4 +1,4 @@
-number = [1,2,3,4]
-result = [x**2 for x in number
-          if x % 2 == 0]
-print(result)
+for i in range(6, -1 , -1):
+    for j in range(i):
+        print("*", end= " ")
+    print()
