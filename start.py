@@ -1,4 +1,6 @@
-for i in range(6, -1 , -1):
-    for j in range(i):
-        print("*", end= " ")
-    print()
+numbers = [3, 7, 2, 9, 12, 15, 1]
+max_score = 0
+for i in numbers:
+    if i > max_score:
+        max_score = i
+print(max_score)
