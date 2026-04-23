@@ -1,7 +1,6 @@
-numbers = [3, 7, 2, 9, 12, 15, 1]
-max_score = 0
-even_number = []
-for i in numbers:
+for i in range(1, 101):
     if i % 2 == 0:
-        even_number.append(i)
-print("The number of the  EVEN numbers is : ", len(even_number))
+        number = "EVEN"
+    else:
+        number = "ODD"
+    print(number, end= " ")
