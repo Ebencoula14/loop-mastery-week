@@ -1,10 +1,11 @@
 import random
-count_above_70 = 0
-num_in_a_list = []
-for i in range(50):
-    num = random.randint(1,101)
-    if num > count_above_70:
-        count_above_70 += 1
-        num_in_a_list.append(num)
-print(num_in_a_list)
-print("The Numbers above 70 : " , count_above_70)
+Heads = 0
+Tails = 0
+for i in range(100):
+    toss = random.choice(['H', 'T'])
+    if toss == "H":
+        Heads += 1
+    else:
+        Tails += 1
+print("The number of Heads is : ", Heads)
+print("The number of Tails is: ", Tails)
