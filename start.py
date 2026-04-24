@@ -1,14 +1,10 @@
-sum_of_odd = 0
-sum_of_even = 0
-for i in range(1, 101):
-    if i % 2 == 0:
-        number = "EVEN"
-        sum_of_even += i
-    else:
-        number = "ODD"
-        sum_of_odd += i
-#print(number, end= " ")
-print("The sum of ODD number inn the list is : " , sum_of_odd)
-print("The sum of EVEN number in the list is : " , sum_of_even)
-
-
+import random
+count_above_70 = 0
+num_in_a_list = []
+for i in range(50):
+    num = random.randint(1,101)
+    if num > count_above_70:
+        count_above_70 += 1
+        num_in_a_list.append(num)
+print(num_in_a_list)
+print("The Numbers above 70 : " , count_above_70)
