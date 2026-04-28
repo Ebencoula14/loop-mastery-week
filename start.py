@@ -30,14 +30,26 @@ import random
 message = input("Hihi Everyone, we are all welcome to the HOUSE PARTY,"
                              "we are going to be having a lot of FUN, we know the "
                              "ROCK,PAPER SCISSORS game right??\n").lower()
+The_options = ["Rock", "Paper", "Scissors"]
+computer_choice = random.randint(0,1)
 if "of course" in message or "yes" in message or "i think so" in message or "alright" in message or "yea" in message:
     print("Sweet, let's play!")
+    name = input("so what is the name?\n").lower().title()
+
+    while True:
+        if "i am" in name  :
+            name_variable = name.split("i am")[-1].strip()
+            print("Hello,", name_variable,"it is nice having you here, let's play the game.")
+            break
+        else:
+            print("You wouldn't want to playing these games without knowing names.")
+
 elif "no" in message or "nah"or "i haven't heard of it" in message or "what are the rules" or "what is that" in message:
     print("Are you for real?")
     choice = input("Are you guys interested? I can quickly bring you guys to speed?\n").lower()
     if "yes" in choice or "cool" in choice or "of course" in choice:
         print("ok, good these are the rules of the game.")
-        choice_rules_of_game=input("it is ROCK PAPER SCISSOR game, you are pick any of the three options"
+        choice_rules_of_game=input("it is ROCK PAPER SCISSOR game, you are to  pick any of the three options "
               "PAPER >> ROCK ,"
               "ROCK >> SCISSORS and  SCISSORS >> PAPER do you get that?\n").lower()
         if "yes" in choice_rules_of_game or " i get it " in choice_rules_of_game:
