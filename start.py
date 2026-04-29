@@ -35,21 +35,27 @@ The_options = ["Rock", "Paper", "Scissors"]
 computer_choice = random.randint(0,1)
 if "of course" in message or "yes" in message or "i think so" in message or "alright" in message or "yea" in message:
     name = input("so what is the name?\n").lower()
-    if "i am" in name :
-        name_variable = name.split("i am")[-1].strip().title()
-        print("Hello,", name_variable,"it is nice having you here, let's play the game.")
-    elif "my name is " in name:
-        name_variable =name.split("my name is ")[-1].strip().title()
-        print(f"well,well,well,{name_variable} it is a pleasure to have your acquaintance")
-    elif "i'm" in name :
-        name_variable  = name.split("i'm ")[-1].strip().title()
-        print(f"welcome,{name_variable}, it is nice to meet you!")
-    elif "" in name:
-        name_variable = name.title()
-        print(f"oh {name_variable}, welcome to the house party.")
-    else:
-        print("You wouldn't want to playing these games without knowing  our names right?.")
-
+    while True:
+        if "i am" in name :
+            name_variable = name.split("i am")[-1].strip().title()
+            print("Hello,", name_variable,"it is nice having you here, let's play the game.")
+            break
+        elif "my name is " in name:
+            name_variable =name.split("my name is ")[-1].strip().title()
+            print(f"well,well,well,{name_variable} it is a pleasure to have your acquaintance")
+            break
+        elif "i'm" in name :
+            name_variable  = name.split("i'm ")[-1].strip().title()
+            print(f"welcome,{name_variable}, it is nice to meet you!")
+            break
+        elif "what" in name or "why" in name or "not interested":
+            print("You wouldn't want to playing these games without knowing  our names right?.")
+            break
+        elif "" in name:
+            name_variable = name.title()
+            print(f"oh {name_variable}, welcome to the house party.")
+            continue
+    name_variable = name.title()
     user_choice = input(f"so,{name_variable}, you are to pick between ROCK (0), PAPER(1), SCISSORS (2)\n")
     user_choice = int(user_choice)
     if user_choice >= 0 and user_choice <= 2:
@@ -92,6 +98,9 @@ elif "no" in message or "nah"or "i haven't heard of it" in message or "what are 
             elif "i'm" in alt_name:
                 alt_name_variable = alt_name.split("i'm ")[-1].strip().title()
                 print(f"welcome,{alt_name_variable}, it is nice to meet you!")
+            elif "" in alt_name:
+                alt_name_variable =alt_name.title()
+                print(f"{alt_name_variable},it is nice to have your acquaintance")
             else:
                 print("You wouldn't want to playing these games without knowing  our names right?.")
 
