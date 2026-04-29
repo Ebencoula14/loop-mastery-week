@@ -55,9 +55,10 @@ if "of course" in message or "yes" in message or "i think so" in message or "alr
             name_variable = name.title()
             print(f"oh {name_variable}, welcome to the house party.")
             continue
-    name_variable = name.title()
-    user_choice = input(f"so,{name_variable}, you are to pick between ROCK (0), PAPER(1), SCISSORS (2)\n")
+    name_again = input("so, you want to tell us your name again?\n").lower()
+    user_choice = input(f"so,{name_again.title()}, you are to pick between ROCK (0), PAPER(1), SCISSORS (2)\n")
     user_choice = int(user_choice)
+    name_variable =name_again.title()
     if user_choice >= 0 and user_choice <= 2:
         print("Your choice: ",games_images[user_choice])
     print("The computer chose: ",games_images[computer_choice])
@@ -138,7 +139,7 @@ elif "no" in message or "nah"or "i haven't heard of it" in message or "what are 
             print("Go back to the rules of the game.")
 
     else:
-        name_of_uninterested=input("alright, no problem, i didn't get name tho'\n").lower()
+        name_of_uninterested=input("alright, no problem, i didn't get the name tho'\n").lower()
     while True:
         if not name_of_uninterested:
             print("Alright,You should have a GOOD one!")
