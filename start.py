@@ -44,6 +44,9 @@ if "of course" in message or "yes" in message or "i think so" in message or "alr
     elif "i'm" in name :
         name_variable  = name.split("i'm ")[-1].strip().title()
         print(f"welcome,{name_variable}, it is nice to meet you!")
+    elif "" in name:
+        name_variable = name.title()
+        print(f"oh {name_variable}, welcome to the house party.")
     else:
         print("You wouldn't want to playing these games without knowing  our names right?.")
 
@@ -124,7 +127,7 @@ elif "no" in message or "nah"or "i haven't heard of it" in message or "what are 
 
         else:
             print("Go back to the rules of the game.")
-            co
+
     else:
         name_of_uninterested=input("alright, no problem, i didn't get name tho'\n").lower()
     while True:
