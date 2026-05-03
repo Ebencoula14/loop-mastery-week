@@ -1,22 +1,35 @@
-import random
-letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+from start import name_variable
 
-print("Welcome to the PyPassword Generator!")
-nr_letters = int(input("How many letters would you like in your password?\n"))
-nr_symbols = int(input(f"How many symbols would you like?\n"))
-nr_numbers = int(input(f"How many numbers would you like?\n"))
-password = []
-for i in range(nr_letters):
-    password += random.choice(letters)
-for i in range(nr_symbols):
-    password += random.choice(symbols)
-for i in range(nr_numbers):
-    password += random.choice(numbers)
-random.shuffle(password)
-new_password = " "
+introduction = input("Welcome to the ROLLERCOASTER GAME, we are aware of THE AGE RESTRICTIONS RIGHT?"
+                     "\n").lower()
 
-for i in password:
-    new_password += i
-print("The recommended password is : ", new_password)
+if "yes" in introduction or "of course" in introduction or "yea" in introduction:
+    print("cool, let's have FUN.")
+    name = input("But first i need to know our names, so we can get ALONG quickly right?\n").lower()
+
+    while True:
+        if not name :
+            print("we need to get acquainted with our names, for easy FLOW of the game.")
+            break
+        elif 'what' in name or 'why' in name or "not interested" in name :
+            print("well,It's COMPANY POLICIES! ")
+            break
+        elif 'my name is ' in name or " i am " in name or "i'm" in name:
+            name_variable  = name.split("my name is " or "i am " or "i'm")[-1].lower().strip().title()
+            print(f"oh{name_variable},it is nice to have your acquaintance!")
+            break
+        elif name:
+            print("It's a PLEASURE to have your ACQUAINTANCE!")
+            break
+        name_variable_1 = name.split("my name is " or "i am " or "i'm")[-1].lower().strip().title()
+        new_name = name or name_variable_1
+        age =int(input(f"{new_name}if you don't MIND,HOW OLD ARE YOU ?\n"))
+        minor_age = int(18 - age )
+        if age >= 18:
+            print("WELCOME ONBOARD THE ROLLERCOASTER, YOU ARE OLD ENOUGH TO DRIVE!")
+        elif age < 18:
+            print(f"I am very SORRY, you need {minor_age} more  years to be ELIGIBLE TO drive.")
+        else:
+            print("I need to know your age to PERMIT to DRIVE the ROLLERCOASTER!")
+else:
+   print("Well, I am PLEASED to inform you that there are AGE RESTRICTIONS to be ELIGIBLE TO DRIVE!")
