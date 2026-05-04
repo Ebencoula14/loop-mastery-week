@@ -5,19 +5,22 @@ introduction = input("Welcome to the ROLLERCOASTER GAME, we are aware of THE AGE
 if "yes" in introduction or "of course" in introduction or "yea" in introduction:
     print("cool, let's have FUN.")
     name = input("But first i need to know our names, so we can get ALONG quickly right?\n").lower()
-    if not name :
-        print("we need to get acquainted with our names, for easy FLOW of the game.")
-    elif 'what' in name or 'why' in name or "not interested" in name :
-        print("well,It's COMPANY POLICIES! ")
-    elif 'my name is ' in name or " i am " in name or "i'm" in name:
-        name_variable  = name.split("my name is " or "i am " or "i'm")[-1].lower().strip().title()
-        print(f"oh {name_variable},it is nice to have your acquaintance!")
-    elif name:
-        name = name.lower().title()
-        print(f"oh, {name}It's a PLEASURE to have your ACQUAINTANCE!")
-    name_variable_1 = name.split("my name is " or "i am " or "i'm")[-1].lower().strip().title()
-    new_name = name or name_variable_1
-    age =int(input(f"{new_name}if you don't MIND,HOW OLD ARE YOU ?\n"))
+    while True:
+        if not name :
+            print("we need to get acquainted with our names, for easy FLOW of the game.")
+            break
+        elif 'what' in name or 'why' in name or "not interested" in name :
+            print("well,It's COMPANY POLICIES! ")
+            break
+        elif 'my name is ' in name or " i am " in name or "i'm" in name:
+            name_variable  = name.split("my name is " or "i am " or "i'm")[-1].lower().strip().title()
+            print(f"oh {name_variable},it is nice to have your acquaintance!")
+            break
+        elif name:
+            name = name.lower().title()
+            print(f"oh, {name} It's a PLEASURE to have your ACQUAINTANCE!")
+            break
+    age =int(input(f"{name}if you don't MIND,HOW OLD ARE YOU ?\n"))
     minor_age = int(18 - age )
     if age >= 18:
         print("WELCOME ONBOARD THE ROLLERCOASTER, YOU ARE OLD ENOUGH TO DRIVE!")
