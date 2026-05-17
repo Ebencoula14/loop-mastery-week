@@ -1,12 +1,7 @@
-
-def even_numbers(n):
-    even =[]
-    odd = []
-    for i in range(n+1):
-        if i % 2 ==0:
-            even.append(i)
-    return even
-
-
-n =int(input("pick any arbitrary number of your choice and  i will list the even NUMBERS iin that range\n "))
-print(even_numbers(n))
+def sum_of_all(*nums):
+    total = 0
+    for i in nums:
+        total += i
+    return total
+nums = int(input("Pick any random numbers and I will tell you the sum of the numbers."))
+print(sum_of_all(nums))
