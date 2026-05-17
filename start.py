@@ -1,4 +1,5 @@
-def calculate_age(current_year, birth_year):
-    age_difference = str(current_year - birth_year) + " years old "
-    return age_difference
-print("Your are " , calculate_age(2026, 1963))
+def number_is_even(n):
+    if n % 2 == 0:
+        return True
+    return False
+print(number_is_even(4564))
