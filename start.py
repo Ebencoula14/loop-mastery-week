@@ -1,4 +1,4 @@
-def weight_of_object(mass, gravity):
-    weight = str(mass * gravity) + "N"
-    return weight
-print(weight_of_object(100, 9.81))
+def calculate_age(current_year, birth_year):
+    age_difference = str(current_year - birth_year) + " years old "
+    return age_difference
+print("Your are " , calculate_age(2026, 1963))
