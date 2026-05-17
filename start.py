@@ -1,6 +1,6 @@
-def add_two_numbers(num_1, num_2):
-    total = num_1 + num_2
-    return total
-num_1 = int(input("kindly choose any arbitrary number?\n"))
-num_2 = int(input("kindly pick another arbitrary number please?\n"))
-print("The sum of your numbers is :", add_two_numbers(num_1,num_2))
+def area_of_circle(r):
+    pie = 3.142
+    formula = pie * r * r
+    return formula
+r = int(input("What is the radius of the circle?\n"))
+print("The area of CIRCLE IS:", area_of_circle(r),"KM")
