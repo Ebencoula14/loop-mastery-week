@@ -1,7 +1,5 @@
-def add_all_nums(*nums):
-    total = 0
-    for i in nums:
-        total += i
-    return total
-
-print(add_all_nums(23,234,6364))
+def convert_celsius_to_fahrenheit(C):
+    F = (C * 9 / 5) + 32
+    return  F
+C = int(input("What is the degree in celsius?\n"))
+print(convert_celsius_to_fahrenheit(C))
