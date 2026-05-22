@@ -1,15 +1,5 @@
-def check_season(month):
-    season = " "
-    if month == "December" or month == "January" or month == "February":
-        season = "WINTER"
-    elif month == "March" or month == "April" or month == "May":
-        season = "SPRING"
-    elif month == "June" or month == "July" or month == "August":
-        season = "SUMMER"
-    elif month =="September" or month == "October" or month == "November":
-        season ="AUTUMN"
-    else:
-        season = "INVALID"
-    return season
-month = input("What month is it over there?\n").title()
-print("Oh it is ", check_season(month))
+def solve_quadratic_equation(x):
+    quadratic_equation = 3*(x ** 2) + 5*(x) + 10
+    return quadratic_equation
+user_choice = int(input("What is your value of X?"))
+print(solve_quadratic_equation(user_choice))
