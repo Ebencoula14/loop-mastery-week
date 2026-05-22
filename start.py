@@ -1,5 +1,9 @@
+import random
 def solve_quadratic_equation(x):
-    quadratic_equation = 3*(x ** 2) + 5*(x) + 10
+    a = random.randint(1,100)
+    b = random.randint(1,100)
+    c = random.randint(1,100)
+    quadratic_equation = a*(x ** 2) + b*(x) + c
     return quadratic_equation
-user_choice = int(input("What is your value of X?"))
+user_choice = int(input("What is your value of X?\n"))
 print(solve_quadratic_equation(user_choice))
