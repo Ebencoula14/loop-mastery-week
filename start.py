@@ -1,6 +1,9 @@
-def add_item(n):
-    food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk']
-    food_stuff.append(n)
-    return  food_stuff
-n = input("What is your favorite FOODSTUFF?\n")
-print("Ok the updated LIST is : ", add_item(n))
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2,int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+user_choice = int(input("what is your favorite number?\n"))
+print("Prime Number?", is_prime(user_choice))
