@@ -1,3 +1,4 @@
-for item in range(1,101):
-    if item % 2 != 0 and item != 0:
-        print(item)
+count = 0
+for item in range(101):
+    count += item
+print(count)
