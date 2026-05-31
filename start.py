@@ -1,4 +1,3 @@
-j = 0
-for i in range(11):
-    print(f"{i } * { j} = {i * j}")
-    j += 1
+language = ['Python', 'Numpy','Pandas','Django', 'Flask']
+for item in language :
+    print(item)
