@@ -20,7 +20,8 @@ if "yes" in introduction or "of course" in introduction or "yea" in introduction
             name = name.lower().title()
             print(f"oh, {name} It's a PLEASURE to have your ACQUAINTANCE!")
             break
-    age =int(input(f"{name}if you don't MIND,HOW OLD ARE YOU ?\n"))
+    name_extra =name.split("my name is " or "i am " or "i'm")[-1].lower().strip().title() or name_variable
+    age =int(input(f"{name_extra}, if you don't MIND,HOW OLD ARE YOU ?\n"))
     minor_age = int(18 - age )
     if age >= 18:
         print("WELCOME ONBOARD THE ROLLERCOASTER, YOU ARE OLD ENOUGH TO DRIVE!")
