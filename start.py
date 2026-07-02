@@ -1,6 +1,6 @@
-def area_of_circle(r):
-    π = 3.142
-    area = (π * r ** 2)
-    return area
-r = int(input('what is the value of the RADIUS in KM?\n'))
-print("The area of the CIRCLE is ", area_of_circle(r) , "KM\u00b2")
+def add_two_numbers():
+    num_one = input("choose any number?\n")
+    num_two = input("choose another number?\n")
+    total = num_two + num_one
+    return total
+print("The sum of the numbers is : ", add_two_numbers())
